@@ -3,7 +3,10 @@
 internal static class Methods
 {
     // TODO: Create a method that takes an array of numbers and removes all of the even numbers
-
+    public static int[] RemoveEvens(int[] numbers)
+    {
+        throw new NotImplementedException();
+    }
 
     // TODO: Create a method that takes an array of strings and removes all of the !'s
 
