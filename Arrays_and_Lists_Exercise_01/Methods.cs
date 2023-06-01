@@ -21,7 +21,6 @@ public static class Methods
     // and display them to the console
     public static string[] RemoveExclamationMarks(string[] strs)
     {
-        var newArray = new string[strs.Length];
         var strWithoutExclamations = "";
         for (int i = 0; i < strs.Length; i++)
         {
@@ -31,11 +30,29 @@ public static class Methods
                 {
                     continue;
                 }
-                strWithoutExclamations += strs[i][j];                
+                strWithoutExclamations += strs[i][j];
             }
-            newArray[i] = strWithoutExclamations;
+            strs[i] = strWithoutExclamations;
+            strWithoutExclamations = "";
         }
-        return newArray;
+        return strs;
+
+        //var newArray = new string[strs.Length];
+        //var strWithoutExclamations = "";
+        //for (int i = 0; i < strs.Length; i++)
+        //{
+        //    for (int j = 0; j < strs[i].Length; j++)
+        //    {
+        //        if (strs[i][j] == '!')
+        //        {
+        //            continue;
+        //        }
+        //        strWithoutExclamations += strs[i][j];
+        //    }
+        //    newArray[i] = strWithoutExclamations;
+        //    strWithoutExclamations = "";
+        //}
+        //return newArray;
     }
 
 

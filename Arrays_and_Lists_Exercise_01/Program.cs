@@ -19,7 +19,7 @@ string[] myStringArray = { "Zero", "On!e", "!Two", "Three!!", "!F!o!u!r!", "!!!!
 var result = Methods.RemoveExclamationMarks(myStringArray);
 foreach (string str in result)
 {
-    Console.WriteLine(str);
+    //Console.WriteLine(str);
 }
 
 // TODO: Call the method that takes an array of Cats and sorts them by the Name's length (smallest first)
