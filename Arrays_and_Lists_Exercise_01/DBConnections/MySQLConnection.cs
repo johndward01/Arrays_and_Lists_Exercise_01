@@ -2,7 +2,7 @@
 
 namespace Arrays_and_Lists_Exercise_01.DBConnections;
 
-class MySQLConnection : IDbConnection
+internal class MySQLConnection : IDbConnection
 {
     public string ConnectionString { get; set; }
 

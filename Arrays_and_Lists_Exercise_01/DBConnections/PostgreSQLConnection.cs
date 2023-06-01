@@ -2,7 +2,7 @@
 
 namespace Arrays_and_Lists_Exercise_01.DBConnections;
 
-class PostgreSQLConnection : IDbConnection
+internal class PostgreSQLConnection : IDbConnection
 {
     public string ConnectionString { get; set; }
 

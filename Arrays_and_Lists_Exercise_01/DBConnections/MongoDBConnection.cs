@@ -2,7 +2,7 @@
 
 namespace Arrays_and_Lists_Exercise_01.DBConnections;
 
-class MongoDBConnection : IDbConnection
+internal class MongoDBConnection : IDbConnection
 {
     public string ConnectionString { get; set; }
 

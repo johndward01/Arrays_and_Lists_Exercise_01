@@ -10,7 +10,7 @@ using System.Data;
 int[] myIntArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 foreach (int i in Methods.ReplaceEvens(myIntArray))
 {
-   // Console.WriteLine(i);
+    // Console.WriteLine(i);
 }
 
 // TODO: Call the method that takes an array of strings and removes all of the !'s
@@ -24,8 +24,24 @@ foreach (string str in result)
 
 // TODO: Call the method that takes an array of Cats and sorts them by the Name's length (smallest first)
 // and display them to the console
-string[] catNames = { "Fluffy", "Whiskers", "Mittens", "Shadow", "Simba", "Milo", "Tiger", "Smoky", "Socks", "TabbyTabs" };
-
+var catNames = new Cat[]
+{
+    new Cat() { Name = "Fluffy" },
+    new Cat() { Name = "Whiskers" },
+    new Cat() { Name = "Mittens" },
+    new Cat() { Name = "Shadow" },
+    new Cat() { Name = "Simba" },
+    new Cat() { Name = "Milo" },
+    new Cat() { Name = "Tiger" },
+    new Cat() { Name = "Smoky" },
+    new Cat() { Name = "Socks" },
+    new Cat() { Name = "TabbyTabs" }
+};
+var catsAscending = Methods.CatNamesAscending(catNames);
+foreach (var cat in catsAscending)
+{
+    Console.WriteLine(cat.Name);
+}
 
 // TODO: Call the method that takes an array of Dogs and sorts them by Breed (oldest first)
 // and display them to the console

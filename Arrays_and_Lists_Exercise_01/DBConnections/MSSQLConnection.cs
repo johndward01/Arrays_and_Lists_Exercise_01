@@ -2,7 +2,7 @@
 
 namespace Arrays_and_Lists_Exercise_01.DBConnections;
 
-class MSSQLConnection : IDbConnection
+internal class MSSQLConnection : IDbConnection
 {
     public string ConnectionString { get; set; }
 
