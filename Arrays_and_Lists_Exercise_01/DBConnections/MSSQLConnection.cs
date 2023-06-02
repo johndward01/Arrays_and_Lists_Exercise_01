@@ -8,7 +8,7 @@ internal class MSSQLConnection : IDbConnection
 
     public int ConnectionTimeout => 1;
 
-    public string Database => "";
+    public string Database => "MSSQL Server";
 
     public ConnectionState State => ConnectionState.Open;
 

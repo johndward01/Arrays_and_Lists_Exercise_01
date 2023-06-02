@@ -8,7 +8,7 @@ internal class MongoDBConnection : IDbConnection
 
     public int ConnectionTimeout => 5;
 
-    public string Database => "";
+    public string Database => "MongoDB";
 
     public ConnectionState State => ConnectionState.Open;
 

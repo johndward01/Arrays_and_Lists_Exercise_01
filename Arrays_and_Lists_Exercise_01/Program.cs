@@ -86,4 +86,8 @@ var postgreSql = new PostgreSQLConnection();
 var mongo = new MongoDBConnection();
 var microsoftSql = new MSSQLConnection();
 #endregion
-var connections = new List<IDbConnection>() { mySql, postgreSql, mongo, microsoftSql };
+var connections = new List<IDbConnection>() { postgreSql, mongo, microsoftSql, mySql };
+foreach (var conn in Methods.SortConnectionsDescending(connections))
+{
+    Console.WriteLine($"{conn.Database} {conn.ConnectionTimeout} second(s) timeout");
+}

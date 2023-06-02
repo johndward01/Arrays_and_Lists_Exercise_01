@@ -8,7 +8,7 @@ internal class PostgreSQLConnection : IDbConnection
 
     public int ConnectionTimeout => 10;
 
-    public string Database => "";
+    public string Database => "PostgreSQL";
 
     public ConnectionState State => ConnectionState.Open;
 

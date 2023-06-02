@@ -8,7 +8,7 @@ internal class MySQLConnection : IDbConnection
 
     public int ConnectionTimeout => 15;
 
-    public string Database => "";
+    public string Database => "MySQL";
 
     public ConnectionState State => ConnectionState.Open;
 

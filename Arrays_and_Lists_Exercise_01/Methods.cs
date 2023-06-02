@@ -109,11 +109,7 @@ internal static class Methods
     // TODO: Create a method that takes a list of IDbConnections and orders them by their ConnectionTimeout (Longest to Shortest)
     internal static List<IDbConnection> SortConnectionsDescending(List<IDbConnection> connections)
     {
-        var list = new List<IDbConnection>();
-        foreach (var connection in connections)
-        {
-
-        }
+        return connections.OrderByDescending(x => x.ConnectionTimeout).ToList();
     }
 }
 
